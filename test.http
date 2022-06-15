@@ -1,0 +1,26 @@
+### test JWT
+
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+    "id": 1,
+    "email": "blabla@gmail.com",
+    "password": "test"
+}
+
+### test middleware tokken de verif
+
+GET http://localhost:3000/api/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Ik1hTmEiLCJlbWFpbCI6ImJsYWJsYUBnbWFpbC5jb20iLCJpYXQiOjE2NDcxODY3NzQsImV4cCI6MTY0NzE4ODU3NH0.iNb4Mx8T2i-y7SkRQuUsd1uT_9byB1Ra5kKhjkX4P9o
+
+
+### test middleware tokken de verif
+
+GET http://localhost:3000/api/2/profil
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Ik1hTmEiLCJlbWFpbCI6ImJsYWJsYUBnbWFpbC5jb20iLCJpYXQiOjE2NDcwMTQwNzEsImV4cCI6MTY0NzAxNTg3MX0.ndcZV_h1HV3NpZbo6E_H_wemhsGbQDhp6MZHfChHikk
+
+### test JWT
+
+POST http://localhost:3000/api/refreshtoken
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Ik1hTmEiLCJlbWFpbCI6ImJsYWJsYUBnbWFpbC5jb20iLCJpYXQiOjE2NDYxNzIxMDksImV4cCI6MTY3NzcyOTcwOX0.Q-hYm9ELSVyXQnTbc-9z7-g-TtrNee1DM3h8bwMF358
